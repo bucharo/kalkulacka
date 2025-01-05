@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka</title>
+    <link rel="stylesheet" href="kalkulacka.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Kalkulačka</h1>
+        <div class="input-container">
+            <label for="value1">Hodnota 1:</label>
+            <input type="text" id="value1" placeholder="Zadejte číslo">
+        </div>
+        <div class="input-container">
+            <label for="value2">Hodnota 2:</label>
+            <input type="text" id="value2" placeholder="Zadejte číslo">
+        </div>
+        <div class="button-container">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">×</button>
+            <button onclick="calculate('/')">÷</button>
+        </div>
+        <div id="vysledek" class="result-container"></div>
+    </div>
+    <script src="kalkulacka.js"></script>
+</body>
+</html>
